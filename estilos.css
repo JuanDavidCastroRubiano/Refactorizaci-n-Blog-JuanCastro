@@ -1,0 +1,79 @@
+body{
+    font-family: Arial;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+}
+
+.titulo{
+    color: white;
+    font-weight: bold;
+}
+
+.card{
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-warning{
+    background-color: #ffb703;
+}
+
+.btn-warning:hover{
+    background-color: #fb8500;
+}
+
+footer{
+    font-size: 14px;
+}
+/* ABOUT */
+.texto-about{
+    color: white;
+    font-size: 16px;
+}
+
+/* FORMULARIO BONITO */
+.form-container{
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.form-container input,
+.form-container textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-container button{
+    width: 100%;
+    padding: 12px;
+    background: #2193b0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.form-container button:hover{
+    background: #176d85;
+}
+
+#respuesta{
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}

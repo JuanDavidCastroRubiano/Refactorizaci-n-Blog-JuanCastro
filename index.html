@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refactorizacion-Blog</title>
+    <title>Refactorizacion-BlogDeportes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">BlogDeportes</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutUs.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactUs.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5">
+
+        <h1 class="text-center mb-4 titulo">Noticias deportivas</h1>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="img/noticia1.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia</h5>
+                        <p>Los equipos se preparan para nuevos torneos.</p>
+                        <button class="btn btn-warning">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="img/noticia2.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia</h5>
+                        <p>El ciclismo colombiano sigue destacando.</p>
+                        <button class="btn btn-warning">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <img src="img/noticia3.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Noticia</h5>
+                        <p>La selección Colombia continúa su preparación.</p>
+                        <button class="btn btn-warning">Leer más</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="mt-5 text-center titulo">Curiosidades deportivas</h2>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6">
+                <div class="card shadow">
+                    <img src="img/curiosidad1.jpg">
+                    <div class="card-body">
+                        <h5>Dato curioso</h5>
+                        <p>Un jugador recorre hasta 11 km en un partido.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="card shadow">
+                    <img src="img/curiosidad2.jpeg">
+                    <div class="card-body">
+                        <h5>Dato curioso</h5>
+                        <p>Un ciclista puede quemar más de 5000 calorías.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>© 2026 BlogDeportes - Todos los derechos reservados</p>
+        <p>Juan David Castro Rubiano</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalNoticia">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Noticia</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="contenidoModal"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+
 </body>
+
 </html>
